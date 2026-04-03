@@ -11,6 +11,8 @@ export const metadata = {
   description: "Shop premium clothes, cosmetics, and groceries in one place.",
 };
 
+export const dynamic = "force-dynamic";
+
 export default async function RootLayout({ children }) {
   // Try dynamic fetch for user settings (e.g. text color)
   let settings = { globalTextColor: '#333333' }; // Default Amazon-ish dark text color
